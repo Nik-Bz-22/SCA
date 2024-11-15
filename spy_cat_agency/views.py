@@ -12,7 +12,7 @@ class MissionViewSet(viewsets.ModelViewSet):
     queryset = Mission.objects.all()
     serializer_class = MissionSerializer
 
-    @action(detail=True, methods=['post'])
+    @action(detail=True, methods=['put'])
     def assign_cat(self, request, pk=None):
         mission = self.get_object()
         cat_id = request.data.get('cat_id')
@@ -44,7 +44,7 @@ class TargetViewSet(viewsets.ModelViewSet):
     queryset = Target.objects.all()
     serializer_class = TargetSerializer
 
-    @action(detail=True, methods=['post'])
+    @action(detail=True, methods=['put'])
     def mark_complete(self, request, pk=None):
         target = self.get_object()
         target.is_complete = True
