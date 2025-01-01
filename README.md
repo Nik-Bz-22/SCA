@@ -18,7 +18,6 @@ python manage.py createsuperuser (optional)
 python manage.py runserver
 ```
 
-
 ## API Endpoints
 ### 1. Cats
 
@@ -69,7 +68,7 @@ From the agency perspective, they regularly hire new spy cats and so should be a
 - **Spy Cats**
     - Ability to create a spy cat in the system
         - A cat is described as Name, Years of Experience, Breed, and Salary.
-        - Breed must be validated, see General
+        - Breed must be validated, see General.
     - Ability to remove spy cats from the system
     - Ability to update spy cats’ information (Salary)
     - Ability to list spy cats
