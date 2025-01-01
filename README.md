@@ -18,6 +18,7 @@ python manage.py createsuperuser (optional)
 python manage.py runserver
 ```
 
+
 ## API Endpoints
 ### 1. Cats
 
